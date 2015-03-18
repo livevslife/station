@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<!-- 登陆拦截器 -->
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<!-- 需拦截的地址 -->
+			<!-- 一级目录 -->
+			<mvc:mapping path="/*.do" />
+			<mvc:mapping path="/*.ajax" />
+			<mvc:mapping path="/*.htm" />
+
+			<!-- 二级目录 -->
+			<mvc:mapping path="/*/*.do" />
+			<mvc:mapping path="/*/*.ajax" />
+			<mvc:mapping path="/*/*.htm" />
+			<!-- 需排除拦截的地址 -->
+			<mvc:exclude-mapping path="/index.do" />
+			<bean class="com.wap.uity.SecurityInterceptor" />
+		</mvc:interceptor>
+	</mvc:interceptors>
