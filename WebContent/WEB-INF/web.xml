@@ -60,8 +60,8 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
-	<!-- springmvc wap 配置 -->
-	<servlet>
+ 	<!-- springmvc wap 配置 -->
+	<!--<servlet>
 		<servlet-name>springmvcwap</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
@@ -74,7 +74,7 @@
 		<servlet-name>springmvcwap</servlet-name>
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
-
+ -->
 
 
 	<!-- 解决中文件参数传递乱码问题 -->

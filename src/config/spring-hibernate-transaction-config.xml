@@ -36,8 +36,8 @@
 
 		<property name="configLocations">
 			<list>
-				<value>classpath*:com/web/textmvc/hibernate/hibernate.cfg.xml</value>
-				<value>classpath*:com/wap/hibernate/hibernate.cfg.xml</value>
+				<value>classpath*:com/web/mvc/hibernate/hibernate.cfg.xml</value>
+			<!-- 	<value>classpath*:com/wap/hibernate/hibernate.cfg.xml</value> -->
 				<!-- value>classpath*:com/webservice/hibernate/hibernate.cfg.xml</value-->
 			</list>
 		</property>

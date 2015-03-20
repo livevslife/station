@@ -22,12 +22,9 @@
 	<!-- 静态资源映射 -->
 	<mvc:resources mapping="/images/**" location="/WEB-INF/images/" />
 	<mvc:resources mapping="/css/**" location="/WEB-INF/css/" />
-	<mvc:resources mapping="/wapimg/**" location="/WEB-INF/wapimg/" />
-	<mvc:resources mapping="/wapcss/**" location="/WEB-INF/wapcss/" />
 	<mvc:resources mapping="/jquery/**" location="/WEB-INF/jquery/" />
 	<mvc:resources mapping="/video/**" location="/WEB-INF/video/" />
 	<mvc:resources mapping="/js/**" location="/WEB-INF/js/" />
-	<mvc:resources mapping="/	Bootstrap/**" location="/WEB-INF/Bootstrap/" />
 	<!-- <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %> <script 
 		type="text/javascript" src='<c:url value="/js/jquery.js"></c:url>'></script> -->
 
