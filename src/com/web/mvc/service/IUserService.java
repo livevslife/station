@@ -1,7 +1,10 @@
 package com.web.mvc.service;
 
-import com.web.mvc.model.UserBean;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.web.mvc.model.text;
 
 public interface IUserService {
-	public void addUser(UserBean userbean) throws Exception;
+	
+	public void addUser(text t) throws Exception;
 }

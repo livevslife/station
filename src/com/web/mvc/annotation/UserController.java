@@ -1,19 +1,12 @@
 package com.web.mvc.annotation;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.web.mvc.dto.UserDto;
-import com.web.mvc.model.UserBean;
+import com.web.mvc.model.text;
 import com.web.mvc.service.IUserService;
 
 /**
@@ -28,18 +21,18 @@ import com.web.mvc.service.IUserService;
 public class UserController {
 	// 获取继承了事务管理类
 	// 将组件（bean）userManager注入到该类中
-	private static final Log log = LogFactory.getLog(UserController.class);
-
+//	private static final Log log = LogFactory.getLog(UserController.class);
+	@Autowired
 	private IUserService userService;
 
 	@RequestMapping(value = "/add")
-	public String add(UserDto userdto, HttpServletRequest request) {
-		UserBean userbean = new UserBean();
-		userbean.setUsername(userdto.getUsername());
-		userbean.setAge(userdto.getAge());
+	public String add(text t, HttpServletRequest request) {
+//		UserBean userbean = new UserBean();
+//		userbean.setUsername(userdto.getUsername());
+//		userbean.setAge(userdto.getAge());
 
 		try {
-			userService.addUser(userbean);
+			userService.addUser(t);
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

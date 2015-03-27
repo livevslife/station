@@ -1,7 +1,5 @@
 package com.web.mvc.dto;
 
-import javax.persistence.Column;
-
 public class UserDto {
 	private String username;
 

@@ -1,9 +1,9 @@
 package com.web.mvc.dao;
 
-import com.web.mvc.model.UserBean;
+import com.web.mvc.model.text;
 
 public interface IUserDao {
 
-	public void adduser(UserBean userbean) throws Exception;
+	public void adduser(text t) throws Exception;
 
 }
